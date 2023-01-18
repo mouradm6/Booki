@@ -1,0 +1,17 @@
+header, a{
+    display: flex;
+    text-decoration: none;
+    color: #0065FC;
+}
+.logo {
+    margin-top: 44px;
+    margin-left: 55px;
+}
+.menu{
+    display: inline-flex;
+    gap: 35px;
+    width: 381px;
+    height: 19px;
+    margin-left: 1530px;
+    margin-top: 48px;
+}
