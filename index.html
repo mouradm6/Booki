@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/2d243365b6.js" crossorigin="anonymous"></script>
     <title>BOOKI</title>
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="./images/logo/Booki.png" alt="Le logo de Booki" width="61px" height="29px">
-        <div class="menu">
-            <div><a href="#">Hébergements</a></div>
-            <div><a href="#">Activités</a></div></div>
+    <header>
+        <div class="logo" >
+            <img src="./images/logo/Booki.png" alt="Le logo de Booki" height="30px" width="60px">
+        </div>
+
+        <nav class="nav-bar"> 
+            <a class ="nav-bar-items" href="#">Hébergements</a>
+            <a class="nav-bar-items" href="#">Activités</a>    
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <section>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form action="#" method="post" class="search-form">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input class="search-input" type="text" placeholder="Marseille, France">
+                <button class ="search-button" type="submit">Rechercher</button>
+
+            </form>
+        </section>
+    </main>
     <footer></footer>
 
 </body>
