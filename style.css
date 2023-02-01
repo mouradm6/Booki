@@ -10,8 +10,14 @@ header{
     align-items: center; 
     height: 118px;
     margin: 0 20px 0 55px;
+    
+    
 }
-
+.logo{
+    padding: 25px 0 0 0;
+    height: 30px;
+    width: 60px;
+}
 a {
     text-decoration: none; 
     color:#000000; 
@@ -25,19 +31,93 @@ a {
     padding: 45px;
     color:#0065fc;
 }
+
+
+
+
+
+
+
+
+
 h1{
     font-size: 22px;
+    font-weight: 700;
 }
-h1, p{
-    padding: 0 0 0 55px;
+.search{
+    padding-left: 55px;
+    
 }
-
-.search-form{
+.fa-location-dot{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 50px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;  
+    border-radius: 15px 0px 0px 15px;
+    text-align: center;
+}
+.search-input{
+   font-size: 18px;
+   padding-left: 17px;
+   font-weight: 700;
+   border: 1px solid #F2F2F2; 
+}
+.search-form{
+    display: flex;
+    margin-top: 20px; 
+    height: 50px;
+}
+.search-button-text{
+    color: white;
+    background-color: #0065FC;
+    width: 135px;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+.search-button-icon{
+    display: none;
 }
 
-@media screen and (max-width: 700px) {
+
+
+.filter{
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 55px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+li{
+    height: 100%;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+.filter i{
+    padding: 10px;
+    color: #0065FC;
+}
+li a:last-child{
+    padding-right: 10px;
+}
+li:hover{
+    background-color: #DEEBFF;
+}
+
+@media screen and (max-width: 650px) {
     header{
         display: flex;
         align-items: center;
@@ -66,5 +146,46 @@ h1, p{
         border-top: none;
         padding: 0 0 25px; 
     }
-    
+    .search-button-text{
+        display: none;
+    }
+    .search-button-icon{
+        display: block;
+        color: white;
+        background-color: #0065FC;
+        width: 50px;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .search{
+        padding-left: 20px;
+    }
+    ul{
+        padding: 0px;
+        font-size: 14px;
+    }
+    .filter{
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    li{
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (max-width: 460px){
+    ul{
+        font-size: 10px;
+    }
+    .filter{
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    li{
+        width: calc(50% - 40px);
+    }
 }
