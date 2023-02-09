@@ -2,16 +2,16 @@ body {
     font-family:'Raleway', sans-serif;
     color:black;
     font-size: 16px;
+    width: 100%;
 }
+
 
 header{
     display:flex;
     justify-content: space-between;
     align-items: center; 
     height: 118px;
-    margin: 0 20px 0 55px;
-    
-    
+    margin: 0 20px 0 55px;   
 }
 .logo{
     padding: 25px 0 0 0;
@@ -36,16 +36,13 @@ a {
 
 
 
-
-
-
-
 h1{
     font-size: 22px;
     font-weight: 700;
 }
 .search{
     padding-left: 55px;
+    padding-right: 55px;
     
 }
 .fa-location-dot{
@@ -93,6 +90,7 @@ h1{
 }
 
 ul{
+    height: 50px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +100,9 @@ ul{
     
 }
 li{
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 }
@@ -116,6 +116,37 @@ li a:last-child{
 li:hover{
     background-color: #DEEBFF;
 }
+
+
+
+
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 35px 0 0 50px;
+    height: 24px;
+}
+.fa-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    margin: 0 10px 0 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    color: #0065FC;
+    
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 650px) {
     header{
@@ -146,6 +177,16 @@ li:hover{
         border-top: none;
         padding: 0 0 25px; 
     }
+
+
+    .search-form{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .search-input{
+        width: 50%;
+    }
     .search-button-text{
         display: none;
     }
@@ -153,13 +194,23 @@ li:hover{
         display: block;
         color: white;
         background-color: #0065FC;
-        width: 50px;
+        width: 15%;
         border: 1px solid #0065FC;
         border-radius: 0px 15px 15px 0px;
     }
     .search{
         padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
     }
+    .fa-location-dot{
+        width: 15%;
+    }
+
+
+
+
+
     ul{
         padding: 0px;
         font-size: 14px;
@@ -171,8 +222,10 @@ li:hover{
         width: 100%;
     }
     li{
+        height: 50px;
         width: calc(50% - 50px);
     }
+
 }
 
 @media screen and (max-width: 460px){
@@ -186,6 +239,13 @@ li:hover{
         width: 100%;
     }
     li{
+        height: 50px;
         width: calc(50% - 40px);
     }
 }
+/* perfect pixel.
+    tester d'autres navigateurs.
+    le logo.
+    faire un seul button qui change en responsive.
+    valider regulierement le site
+*/
