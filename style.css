@@ -3,6 +3,8 @@
     color:black;
     font-size: 16px;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 /* *********LE HEADER********* */
 
@@ -12,19 +14,20 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center; 
-    height: 118px;
     margin: 0 20px 0 55px;   
 }
 .logo{
-    padding: 25px 0 0 0;
-    height: 30px;
+    padding: 45px 0 0 0;
+    height: auto;
     width: 60px;
 }
 a {
     text-decoration: none; 
     color:#000000; 
 }
-
+.nav-bar{
+    padding-top: 45px;
+}
 .nav-bar-items{
     padding: 0 45px;
 }
@@ -36,15 +39,20 @@ a {
 
 
 /* *********LA BARRE DE RECHERCHE********* */
-
+.search p{
+    margin: 0;
+}
 
 h1{
     font-size: 22px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .search{
     padding-left: 55px;
     padding-right: 55px;
+    padding-top:  60px;
     
 }
 .fa-location-dot{
@@ -65,7 +73,7 @@ h1{
 }
 .search-form{
     display: flex;
-    margin-top: 20px; 
+    margin-top: 25px; 
     height: 50px;
 }
 .search-button-text{
@@ -84,14 +92,23 @@ h1{
 .filter{
     /* height: 50px; */
     margin-top: 30px;
-    margin-left: 55px;
+    margin-left: 60px;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    
+    padding: 0;
+}
+.filter h2{
+    font-size: 18px;
+}
+.filter a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-ul{
+.filter ul{
     /* height: 50px; */
     list-style-type: none;
     display: flex;
@@ -99,23 +116,25 @@ ul{
     gap: 40px;
     font-weight: 700;
     font-size: 17px;
+    margin: 0;
     
 }
-li{
+.filter li{
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    
 }
 .filter i{
     padding: 10px;
     color: #0065FC;
 }
-li a:last-child{
-    padding-right: 10px;
+.filter li a:last-child{
+    padding-right: 20px;
 }
-li:hover{
+.filter li:hover{
     background-color: #DEEBFF;
 }
 
@@ -125,8 +144,7 @@ li:hover{
 
 .info{
     display: flex;
-    align-items: center;
-    margin: 35px 0 0 50px;
+    margin: 45px 0 0 50px;
     height: 24px;
 }
 .fa-info{
@@ -147,6 +165,7 @@ li:hover{
     padding: 35px 50px 0 50px;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     
 }
 .accommodation-city{
@@ -155,6 +174,7 @@ li:hover{
     flex-direction: column;
     flex-wrap: wrap;
     width: 66%;
+
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 0;
@@ -182,6 +202,7 @@ li:hover{
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
     line-height: 1.5;
+    background-color: #FFFFFF;
 }
 .hotel-card img{
     box-sizing: border-box;
@@ -244,6 +265,7 @@ li:hover{
     margin: 0 35px 35px 35px;
     box-shadow: 0px 3px 15px 0px #0000001A;
     border-radius: 20px;
+    background-color: #FFFFFF;
 
 }
 .hotel-card-populaire img {
@@ -270,6 +292,7 @@ li:hover{
 
 h2{
     font-size: 22px;
+    margin: 0;
 }
 i{
     color: #0065FC;
@@ -285,7 +308,58 @@ h3{
     margin-right: 35px;
 }
 
+/* *********LES ACTIVITES********* */
+.activities{
+    width: 100%;
+    padding: 60px 50px 60px 50px;
+}
+.activities-grid{
+    padding-top:20px ;
+    display: flex;
+    gap: 45px;
+}
+.activities-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(25% - 60px);
+    height: 445px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    border-radius: 20px;
 
+}
+.activities-card img{
+    height: 85% ;
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.activities-card p{
+    flex-basis: auto;
+    flex-shrink: 1;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+/* ***********LE FOOTER********* */
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #F2F2F2;
+
+    /* gap: 40px; */
+}
+footer ul{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+    line-height: 1.5;
+}
 
 /* *********LE RESPONSIVE********* */
 @media screen and (min-width: 780px) and (max-width: 1130px) {
@@ -336,6 +410,9 @@ h3{
         margin: 0;
         margin-bottom: 0px;
     }
+    .activities-card{
+        height: auto;
+    }
 }
 @media screen and (max-width: 780px) {
     .accommodation{
@@ -344,14 +421,15 @@ h3{
         display: flex;
         flex-direction: column-reverse;
         gap: 25px;
-        padding: 0;
-        padding-top: 20px;
+        padding: 20px;
+        
         
     }
     .accommodation-city{
         width: 100%;
         border-radius: 0px;
         background-color: white;
+       
     }
     .accommodation-city h2{
         padding-top: 0px;
@@ -361,10 +439,13 @@ h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 5px;
     }
     .hotel-card{
         width: 100%;
-        height: 200px;
+    }
+    .hotel-card img{
+        max-width: 100%;
     }
 
     .most-populaire{
@@ -376,7 +457,7 @@ h3{
         flex-direction: column;
         justify-content: center;
         gap: 25px;
-        margin: 0 35px 50px 35px;
+        margin: 0 5px 50px 5px;
     }
     .hotel-card-populaire{
         margin: 0;
@@ -400,6 +481,34 @@ h3{
     .fa-star{
         margin: 0;
         margin-bottom: 0px;
+    }
+    .activities{
+        padding: 20px;
+    }
+    .activities-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding-right: 20px;
+    }
+    .activities-card{
+        width: 100%;
+        height: 335px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 40px; */
+    }
+    .footer-items{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -465,7 +574,7 @@ h3{
 
 
 
-    ul{
+    .filter ul{
         padding: 0px;
         font-size: 14px;
     }
@@ -475,7 +584,7 @@ h3{
         justify-content: space-between;
         width: 100%;
     }
-    li{
+    .filter li{
         height: 50px;
         width: calc(50% - 50px);
     }
@@ -483,7 +592,7 @@ h3{
 }
 
 @media screen and (max-width: 460px){
-    ul{
+    .filter ul{
         font-size: 10px;
     }
     .filter{
@@ -492,7 +601,7 @@ h3{
         justify-content: space-between;
         width: 100%;
     }
-    li{
+    .filter li{
         height: 50px;
         width: calc(50% - 40px);
     }
