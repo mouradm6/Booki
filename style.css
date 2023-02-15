@@ -26,14 +26,15 @@ a {
     color:#000000; 
 }
 .nav-bar{
-    padding-top: 45px;
+    padding-top: 40px;
+   
 }
 .nav-bar-items{
     padding: 0 45px;
 }
 .nav-bar-items:hover {
     border-top: 2px solid #0065fc;
-    padding: 45px;
+    padding: 40px;
     color:#0065fc;
 }
 
@@ -251,7 +252,7 @@ h1{
 .most-populaire h2{
     display: flex;
     justify-content: space-between;
-    margin: 35px;
+    margin: 40px 35px 35px 35px;
 }
 .result-grid-populaire{
     display: flex;
