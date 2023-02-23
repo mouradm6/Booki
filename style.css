@@ -682,6 +682,25 @@ footer ul {
     width: calc(50% - 40px);
     justify-content: flex-start;
   }
+  .most-populaire{
+    margin-top: 20px;
+    padding: 0;
+  }
+  .accommodation{
+    padding-left: 0;
+    padding-right: 0;    
+  }
+  .accommodation-city h2{
+    padding-left: 15px;
+  }
+  .result-grid-populaire{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .most-populaire h2{
+    padding-left: 15px;
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -713,7 +732,7 @@ footer ul {
   .fa-chart-line {
     margin-right: 20px;
   }
-
+  
   footer {
     padding-left: 30px;
   }
