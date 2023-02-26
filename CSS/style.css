@@ -394,6 +394,8 @@ h3 {
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .activities h2 {
   padding-left: 50px;
@@ -712,6 +714,7 @@ footer ul {
     margin-left: 20px !important;
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     width: 100%;
   }
 
@@ -731,6 +734,9 @@ footer ul {
 
   .fa-chart-line {
     margin-right: 20px;
+  }
+  .info{
+    margin-left: 20px;
   }
   
   footer {
