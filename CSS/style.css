@@ -202,7 +202,7 @@ h1 {
 .result-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   margin: 25px 40px 0 40px;
@@ -374,7 +374,7 @@ h3 {
 }
 .activities-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -438,7 +438,7 @@ footer ul {
 
   .result-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .most-populaire {
@@ -479,19 +479,36 @@ footer ul {
 }
 
 @media screen and (max-width: 780px) {
+  header{
+    margin-left: 20px;
+  }
+  .search{
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  .filter{
+    margin-left: 20px;
+  }
+  .info{
+    margin-left: 20px;
+  }
   .accommodation {
     display: flex;
     flex-direction: column-reverse;
     gap: 25px;
-    padding: 20px;
+    padding: 20px 0;
   }
+
 
   .accommodation-city {
     width: 100%;
     border-radius: 0px;
     background-color: white;
   }
-
+.result-grid {
+    display: flex;
+    justify-content: center;
+  }
   .accommodation-city h2 {
     padding: 0px;
     margin: 5px 5px 0 5px;
@@ -508,10 +525,11 @@ footer ul {
   .most-populaire {
     width: 100%;
     border-radius: 0px;
+    
   }
 
   .most-populaire h2 {
-    margin: 5px 5px 0 5px;
+    margin: 30px 5px 0 20px;
   }
 
   .result-grid-populaire {
@@ -519,7 +537,7 @@ footer ul {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    margin: 0 5px 50px 5px;
+    margin: 0 20px 50px 20px;
   }
 
   .hotel-card-populaire {
